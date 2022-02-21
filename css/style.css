@@ -310,6 +310,10 @@ img {
 } */
 /* -----------------------Team----------------------- */
 
+.team-section {
+  background: #F5F4FA;
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
