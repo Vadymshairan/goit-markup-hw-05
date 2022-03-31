@@ -265,6 +265,10 @@ img {
 .features-item {
   width: 270px;
 }
+.features-title {
+  padding-top: 30px;
+}
+
 .features-item::before {
   display: block;
   content: '';
