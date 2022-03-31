@@ -12,6 +12,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --icons-color-main: #AFB1B8;
 }
 
 p,
@@ -60,8 +61,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
-  /* background-color: violet; */
+  /* outline: 2px solid red;
+  background-color: violet; */
 }
 
 .visually-hidden {
@@ -167,8 +168,8 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  outline: 1px solid red;
-  background-image: url(../images/envelope.png);
+  /* outline: 1px solid red; */
+  background-image: url(../images/envelope.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -260,40 +261,27 @@ img {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .features-item {
-  width: 270px;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px; 
 }
-.features-title {
-  padding-top: 30px;
+.features-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
-.features-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-color: #f5f4fa;
-  background-image: url(../images/antenna.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
-.section.features {
-  padding-bottom: 0;
-}
+
 /* <!--------------Чем мы занимаемся----------------> */
 
 .section-list {
@@ -366,7 +354,7 @@ img {
   padding: 30px 32px;
 }
 .team-social {
-  fill: #afb1b8;
+  fill: var(--icons-color-main);
 }
 .social-link:hover .team-social,
 .social-link:focus .team-social {
@@ -381,13 +369,28 @@ img {
   margin-right: -30px;
 }
 
-.cliens-item {
+.clients-item {
   width: 170px;
   height: 92px;
   padding: 16px 32px;
 
+  border: 1px solid;
+  border-radius: 4px;
+  color: var(--icons-color-main);
+
   width: calc(100% / 6 - 30px);
   margin-right: 30px;
+}
+.clients-icon {
+  fill: var(--icons-color-main);
+}
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent-color);
+}
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+    fill: var(--accent-color);
 }
 
 /* <!-------------------Футер-----------------------> */
