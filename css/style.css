@@ -115,19 +115,11 @@ img {
   align-items: center;
 }
 
-.contacts-header {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
 
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
 
 /* <!----------------------navigation section---------------------> */
 
@@ -149,12 +141,33 @@ img {
 
 /* <!-----------------contacts section---------------------------> */
 
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
 .contacts .link {
+  display: flex;
+  align-items: center;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contacts .link:hover,
@@ -162,21 +175,7 @@ img {
   color: var(--accent-color);
 }
 
-.envelope::before {
-  display: inline-flex;
-  content: '';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  /* outline: 1px solid red; */
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.envelope:hover::after,
-.envelope:focus::after {
-  color: #2196f3;
-}
+
 /* -----------------------Hero----------------------- */
 
 .hero-container {
