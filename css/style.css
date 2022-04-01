@@ -423,8 +423,8 @@ padding-bottom: 0;
   text-decoration: none;
 }
 
-.address {
-  margin-top: 9px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .contacts .address:hover,
 .contacts .address:focus {
