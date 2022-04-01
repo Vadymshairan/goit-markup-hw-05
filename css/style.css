@@ -243,6 +243,9 @@ img {
 }
 
 /* -----------------------<!--Особенности-->----------------------- */
+.features {
+padding-bottom: 0;
+}
 
 .features .title {
   color: var(--title-text-color);
@@ -369,6 +372,12 @@ img {
 }
 
 .clients-item {
+  width: calc(100% / 6 - 30px);
+  margin-right: 30px;
+}
+
+.clients-logo {
+  display:flex ;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
@@ -376,21 +385,16 @@ img {
   border: 1px solid;
   border-radius: 4px;
   color: var(--icons-color-main);
-
-  width: calc(100% / 6 - 30px);
-  margin-right: 30px;
+  
 }
 .clients-icon {
-  fill: var(--icons-color-main);
+  fill: currentColor;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-logo:hover,
+.clients-logo:focus {
   color: var(--accent-color);
 }
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
-    fill: var(--accent-color);
-}
+
 
 /* <!-------------------Футер-----------------------> */
 
