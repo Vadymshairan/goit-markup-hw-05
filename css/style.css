@@ -130,9 +130,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -163,9 +161,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
@@ -233,9 +229,7 @@ img {
   border-radius: 4px;
   border: none;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:focus,
@@ -421,9 +415,7 @@ padding-bottom: 0;
   border-radius: 4px;
   color: var(--icons-color-main);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -468,9 +460,7 @@ padding-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item:not(:last-child) {
@@ -569,9 +559,7 @@ padding-bottom: 0;
   line-height: 1.62;
   text-align: center;
 
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-button:hover,
